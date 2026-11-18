@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FoodSave Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>FoodSave Admin</h1>
+
+      <nav>
+        <a href="/">Home</a>
+        <a href="/donations.html">View Donations</a>
+        <a href="/admin.html">Dashboard</a>
+      </nav>
+    </header>
+
+    <h1>Admin Dashboard</h1>
+
+    <p>Welcome to FoodSave Admin Panel</p>
+
+    <!-- Dashboard Cards -->
+
+    <div class="dashboard-container">
+      <div class="dashboard-card">
+        <h2>Total Donations</h2>
+        <h1 id="totalDonations">0</h1>
+      </div>
+
+      <div class="dashboard-card">
+        <h2>Valid Food</h2>
+        <h1 id="validDonations">0</h1>
+      </div>
+
+      <div class="dashboard-card">
+        <h2>Expired Food</h2>
+        <h1 id="expiredDonations">0</h1>
+      </div>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

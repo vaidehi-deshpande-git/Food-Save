@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Available Donations - FoodSave</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>FoodSave</h1>
+
+      <nav>
+        <a href="/">Home</a>
+        <a href="/#about">About</a>
+        <a href="/#donate">Donate Food</a>
+        <a href="/donations.html">View Donations</a>
+      </nav>
+    </header>
+
+    <h1>Available Food Donations</h1>
+
+    <!-- Search Section -->
+
+    <div class="search-container">
+      <input
+        type="text"
+        id="searchFood"
+        placeholder="Search by Food Name or Location..."
+      />
+
+      <button type="button" id="searchButton">Search</button>
+
+      <button type="button" id="clearButton">Clear</button>
+    </div>
+
+    <!-- Food Status Filter -->
+
+    <div class="search-container">
+      <label for="foodFilter">Filter Food:</label>
+
+      <select id="foodFilter">
+        <option value="all">All Donations</option>
+
+        <option value="valid">Valid Food</option>
+
+        <option value="expired">Expired Food</option>
+      </select>
+    </div>
+
+    <!-- Donation Cards -->
+
+    <div id="donationList">Loading donations...</div>
+
+    <script src="donations.js"></script>
+  </body>
+</html>

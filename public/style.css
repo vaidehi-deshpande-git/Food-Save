@@ -1,0 +1,536 @@
+
+/* =================================
+   FOOD SAVE - COMPLETE CSS
+   Orange Theme
+================================= */
+
+/* Global Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff8f0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: #ff8c00;
+    color: white;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    color: white;
+    font-size: 28px;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 350px;
+    background-color: #fff0dc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    color: #e67300;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+
+button,
+.hero a {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+button:hover,
+.hero a:hover {
+    background-color: #e67300;
+}
+
+/* Common Sections */
+
+section {
+    padding: 50px 30px;
+}
+
+section h2 {
+    text-align: center;
+    color: #e67300;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+section p {
+    color: #555;
+}
+
+/* About Section */
+
+#about {
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.about-card {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #ff8c00;
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card h3 {
+    color: #e67300;
+    margin-bottom: 12px;
+}
+
+/* Donation Form */
+
+#donateForm {
+    background-color: white;
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #ff8c00;
+}
+
+#donateForm label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #444;
+}
+
+#donateForm input,
+#donateForm textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+#donateForm input:focus,
+#donateForm textarea:focus {
+    outline: none;
+    border-color: #ff8c00;
+    box-shadow: 0 0 5px rgba(255, 140, 0, 0.3);
+}
+
+#donateForm button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Form Message */
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Donations Page Heading */
+
+body > h1 {
+    text-align: center;
+    color: #e67300;
+    margin: 35px 10px;
+}
+
+/* Donations Cards */
+
+#donationList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+#donationList div {
+    background-color: white;
+    width: 280px;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #ff8c00;
+    transition: 0.3s;
+}
+
+#donationList div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+#donationList h2 {
+    color: #e67300;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+#donationList p {
+    color: #444;
+    margin: 10px 0;
+}
+
+/* Footer */
+
+footer {
+    background-color: #ff8c00;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 35px 15px;
+    }
+
+    #donateForm {
+        width: 95%;
+        padding: 20px;
+    }
+
+    #donationList {
+        padding: 15px;
+    }
+
+    #donationList div {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .about-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/* Edit and Delete Buttons */
+
+#donationList button {
+    margin: 12px 5px 0 0;
+    padding: 10px 14px;
+    font-size: 14px;
+}
+
+#donationList .delete-btn {
+    background-color: #dc3545;
+}
+
+#donationList .delete-btn:hover {
+    background-color: #b02a37;
+}
+
+/* Search Food Section */
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px;
+}
+
+#searchFood {
+    width: 350px;
+    max-width: 100%;
+    padding: 13px;
+    border: 2px solid #ff8c00;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+#searchFood:focus {
+    box-shadow: 0 0 6px rgba(255, 140, 0, 0.4);
+}
+
+#clearButton {
+    background-color: #555;
+}
+
+#clearButton:hover {
+    background-color: #333;
+}
+
+/* =========================
+   FOODSAVE ADMIN DASHBOARD
+========================= */
+
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 30px;
+}
+
+.dashboard-card {
+    background-color: white;
+    width: 260px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    border-top: 5px solid #ff8c00;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card h2 {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.dashboard-card h1 {
+    color: #ff8c00;
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+body > p {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+/* Dashboard Responsive Design */
+
+@media (max-width: 768px) {
+
+    .dashboard-container {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .dashboard-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .dashboard-card h1 {
+        font-size: 35px;
+    }
+}
+
+/* =========================
+   FINAL PROFESSIONAL POLISH
+========================= */
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Better Header */
+header {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    position: relative;
+    z-index: 10;
+}
+
+/* Navigation Hover */
+nav a {
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #ff8c00;
+}
+
+/* Better Buttons */
+button,
+.hero a {
+    box-shadow: 0 3px 8px rgba(255, 140, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Better Form */
+#donateForm {
+    transition: 0.3s ease;
+}
+
+#donateForm:hover {
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.13);
+}
+
+#donateForm textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+/* Better Cards */
+.about-card,
+.dashboard-card {
+    transition: all 0.3s ease;
+}
+
+/* Better Search and Filter */
+.search-container select {
+    padding: 12px;
+    border: 2px solid #ff8c00;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: white;
+}
+
+/* Better Focus for Accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid #e67300;
+    outline-offset: 3px;
+}
+
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    #donateForm {
+        padding: 18px;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    #searchFood,
+    .search-container select,
+    .search-container button {
+        width: 100%;
+    }
+}
+
+
